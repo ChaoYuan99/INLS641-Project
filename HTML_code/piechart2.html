@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<div id="pie_chart_area"></div>
+<div id="bar_chart_area"></div>
+
+
+<script>
+
+    // specifying data to draw pie charts
+    let octNovData = {"Bronx": 6345, "Brooklyn": 21031, "Manhattan": 10708, "Queens": 13981, "Staten Island": 5137};
+    let decJanData = {"Bronx": 160898, "Brooklyn": 281043, "Manhattan": 182512, "Queens": 264626, "Staten Island": 62348};
+
+    drawPie(decJanData);
+
+
+    // specifying data to draw bar charts
+    let ageGroupData = {"0-4": 68418, "5-12": 156505, "13-17": 98168, "18-24": 201626, "25-34": 416636, "35-44": 321146,
+        "45-54": 267842, "55-64": 231966, "65-74": 134303, "75+": 96456};
+
+    let genderGroupData = {"female": 1064697, "male": 920892};
+
+    function drawPie(data) {
+        // defining chart dimensions + pie radius
+        let width = 450;
+        let height = 450;
+        let margin = 40;
+
+        let radius = (Math.min(width, height) / 2) - margin;
+
+        // appending svg to chart-area div
+        let svg = d3.select("#pie_chart_area")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+        // colors
+        let color = d3.scaleOrdinal()
+            .domain(["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"])
+            .range(d3.schemeCategory10);
+
+        // creating pie using d3
+        let pie = d3.pie()
+            .value(d => d.value);
+
+        let enumData = pie(d3.entries(data));   // separates into [key, value] pairs
+        let arcMaker = d3.arc()                 // generates arc
+            .innerRadius(0)                     // change the value of inner radius to make a donut chart!
+            .outerRadius(radius);
+
+        let slice = svg.selectAll("pieSlices")
+            .data(enumData);
+
+        // creating each piece of pie chart
+        slice
+            .enter()
+            .append("path")
+            .attr("d", arcMaker)
+            .attr("fill", d => color(d.data.key))
+            .attr("stroke", "white")
+            .style("stroke-width", "2px")
+            .style("opacity", 1)
+
+        // labels each portion of the pie chart with burough names
+        slice
+            .enter()
+            .append("text")
+            .attr("transform", d => "translate(" + arcMaker.centroid(d) + ")")
+            .style("text-anchor", "middle")
+            .style("font-size", 10)
+            .text(d => d.data.key);
+
+        // adding percentages
+        let total = 0;
+        dataValues = enumData.map(d => d.value);
+        total = d3.sum(dataValues);
+
+        percentages = dataValues.map(d => (d / total) * 100);
+
+        slice
+            .enter()
+            .append("text")
+            .attr("transform", d => "translate(" + arcMaker.centroid(d) + ")")
+            .attr("dy", "2em")
+            .attr("text-anchor", "middle")
+            .style("font-size", 10)
+            .text((p, i) => percentages[i].toFixed(2) + "%")
+    };
+
+</script>
+</html>

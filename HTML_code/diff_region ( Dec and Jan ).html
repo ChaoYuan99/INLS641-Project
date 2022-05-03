@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c53ef65a8204ef2bbbf40dfad2b3a43 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3c53ef65a8204ef2bbbf40dfad2b3a43" ></div>
+        
+</body>
+<script>    
+    
+            var map_3c53ef65a8204ef2bbbf40dfad2b3a43 = L.map(
+                "map_3c53ef65a8204ef2bbbf40dfad2b3a43",
+                {
+                    center: [40.7125, -74.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe7a366619cd4d57b94a4e415ab9f8c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            var heat_map_4c3701110098402fb560964e956cc867 = L.heatLayer(
+                [[40.85028, -73.86639, 160898.0], [40.69278, -73.99028, 281043.0], [40.79028, -73.95972, 182512.0], [40.72833, -73.79472, 264626.0], [40.57639, -74.14472, 62348.0]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            var circle_896cd96381e4459a8bfbe8ac89cb6e8a = L.circle(
+                [40.85028, -73.86639],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8033.651429957346, "stroke": true, "weight": 3}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            circle_896cd96381e4459a8bfbe8ac89cb6e8a.bindTooltip(
+                `<div>
+                     <li><bold> County:The Bronx<li><bold> Cases: 160898.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de9b521bd54c4f7fbe49c313c1c4084f = L.circle(
+                [40.69278, -73.99028],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12206.174645129599, "stroke": true, "weight": 3}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            circle_de9b521bd54c4f7fbe49c313c1c4084f.bindTooltip(
+                `<div>
+                     <li><bold> County:Brooklyn<li><bold> Cases: 281043.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2456c1d1cd78479e81249bcd0d715116 = L.circle(
+                [40.79028, -73.95972],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8830.159902617637, "stroke": true, "weight": 3}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            circle_2456c1d1cd78479e81249bcd0d715116.bindTooltip(
+                `<div>
+                     <li><bold> County:Manhattan<li><bold> Cases: 182512.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_be21d1bd79214026bfbc7f37967d7645 = L.circle(
+                [40.72833, -73.79472],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11667.407975265518, "stroke": true, "weight": 3}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            circle_be21d1bd79214026bfbc7f37967d7645.bindTooltip(
+                `<div>
+                     <li><bold> County:Queens<li><bold> Cases: 264626.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e5ece33a74a941ce96650acd28b8a0b4 = L.circle(
+                [40.57639, -74.14472],
+                {"bubblingMouseEvents": true, "color": "#8000ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3945.634888083293, "stroke": true, "weight": 3}
+            ).addTo(map_3c53ef65a8204ef2bbbf40dfad2b3a43);
+        
+    
+            circle_e5ece33a74a941ce96650acd28b8a0b4.bindTooltip(
+                `<div>
+                     <li><bold> County:Staten Island<li><bold> Cases: 62348.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
