@@ -24,9 +24,11 @@ Here are the two sketches we made for our website design. As you can see from ou
 
 For the second page, we want to have a line chart that includes all the information about COVID-19 data. For example, it should have the number of total cases, number of hospitalizations, and number of deaths. All three data will be on the same chart to show the comparison and relationship among these three attributes. On the left side, there will be a select box with the option to select different months to compare COVID-19 data with other months.
 
-Figure 1: Initial Sketch - First Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Prototype/Initial%20Sketch%20-%20First%20Page.jpg" alt="We can't find this image" width=70%></div>
+<p align="center">Figure 1: Initial Sketch - First Page</p>
 
-Figure 2: Initial Sketch - Second Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Prototype/Initial%20Sketch%20-%20Second%20Page.jpg" alt="We can't find this image" width=70%></div>
+<p align="center">Figure 2: Initial Sketch - Second Page</p>
 
 After our initial sketch, we want to make a sample prototype in Figma to be closer to our final version. We use three web pages to showcase our final project for this sample prototype. On our first page, we use a map that contains New York City with five regions. We labeled each area with a different color to identify the differences. We want to make a side-by-side comparison to have a more precise understanding of before and after Omicron hits New York City. The radius of the circle should also indicate the number of new cases. Although it does not show in our Figma sample prototype, it is our intended design decision. There will also be a mouse hover effect that provides more information, such as total cases, hospitalizations, and deaths when the mouse hovers in this region.
 
@@ -34,11 +36,14 @@ We want to create a heat map for the second page that shows the severity of COVI
 
 For the third page, we want to create charts only to show in-depth detail about COVID-19 in New York City. Therefore, we want to include line charts, scatterplots, and pie charts. Line charts will show the total number of confirmed cases since the COVID-19 outbreak, the total hospitalizations, and the total deaths.
 
-Figure 3: Figma Prototype - First Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Prototype/Figma%20Prototype%20-%20First%20Page.jpg" alt="We can't find this image" width=90%></div>
+<p align="center">Figure 3: Figma Prototype - First Page</p>
 
-Figure 4: Figma Prototype - Second Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Prototype/Figma%20Prototype%20-%20Second%20Page.jpg" alt="We can't find this image" width=90%></div>
+<p align="center">Figure 4: Figma Prototype - Second Page</p>
 
-Figure 5: Figma Prototype - Third Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Prototype/Figma%20Prototype%20-%20Third%20Page.jpg" alt="We can't find this image"></div>
+<p align="center">Figure 5: Figma Prototype - Third Page</p>
 
 ## Data Transformation and Statistical Analysis
 Since we collect the data from the NYC COVID-19’s official data website, the dataset is precise enough for us to do our project. All we need to do is calculate a seven-day average of the data. We want to calculate the seven-day average data because there are some errors in the dataset. Therefore, we calculate the seven-day average of new cases to eliminate some mistakes since not many testing sites operate during the weekend, making the confirmed cases data during the weekend lower than the weekly average. Friday and Monday’s data are generally higher than the weekly average. By doing the seven-day average calculation, we have a more accurate dataset.
@@ -48,25 +53,33 @@ There will be a link at the bottom of the report to get a complete overview of t
 
 In our final design prototype, we will have three pages. The first page contains five graphs. The first three graphs are line charts, and the other two are bar charts. The line charts show confirmed cases, hospitalizations, and deaths in New York City since the pandemic started. The bar charts show the COVID-19 cases by age group and by gender.
 
-Figure 6: Final Prototype - First Page
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype%20-%20First%20Page.png" alt="We can't find this image"></div>
+<p align="center">Figure 6: Final Prototype - First Page</p>
 
 For the second page, we will stick with our sample prototype. We have a heat map in the second page. The darker the color, the more cases in that region. The heat map is built based on the zip code in our dataset.
 
-Figure 7: Final Prototype - Second Page - First Image
+<img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype%20-%20Second%20Page%20-%20First%20Image.jpg" alt="We can't find this image">
+<p align="center">Figure 7: Final Prototype - Second Page - First Image</p>
 
 For the third page, we decide to show more details of COVID-19 data with four more images. Finally, we want to compare the Omicron variant specifically before and after it hits New York City for our last page. Therefore, we have two map-like images corresponding to the situation before and after COVID-19 hits New York City. We also have two pie charts below to show the percent of cases counted by region.
 
 **Before Omicron Hits New York City**
-Figure 8: Final Prototype - Third Page - First Image
+<img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype-Third%20Page-First%20Image.png" alt="We can't find this image">
+<p align="center">Figure 8: Final Prototype - Third Page - First Image</p>
 
 **After Omicron Hits New York City**
-Figure 9: Final Prototype - Third Page - Second Image
+<img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype%20-%20Third%20Page%20-%20Second%20Image.png" alt="We can't find this image">
+<p align="center">Figure 9: Final Prototype - Third Page - Second Image</p>
 
 **Before Omicron Hits New York City**
-Figure 10: Final Prototype - Third Page - Third Image
+
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype%20-%20Third%20Page%20-%20Third%20Image.png" alt="We can't find this image"></div>
+<p align="center">Figure 10: Final Prototype - Third Page - Third Image</p>
 
 **After Omicron Hits New York City**
-Figure 11: Final Prototype - Third Page - Fourth Image
+
+<div align="center"><img src="https://github.com/ChaoYuan99/INLS641-Project/blob/main/Final_design/Final%20Prototype%20-%20Third%20Page%20-%20Fourth%20Image.png" alt="We can't find this image" ></div>
+<p align="center">Figure 11: Final Prototype - Third Page - Fourth Image</p>
 
 ## Discussion
 In our project, each team member contributes the same and has different roles in building up the final project. Jessica develops a schedule to ensure the project’s steady progression throughout the semester. The schedule outlined soft deadlines for the team to complete different project parts. She also writes code using D3 to create two pie charts for page three of the project. The two pie charts produce a before-and-after-Omicron comparison of the proportion of cases in each borough of New York. Jessica also creates two bar charts using Tableau, embedded on page one of the project. Both bar charts convey the number of Omicron cases in New York; however, one bar chart categorizes the cases based on age group while the other shows the cases divided by sex. Lawrence is in charge of all the presentations and visual slides. He is also in charge of designing the Figma mockups and writing the final report. Haoyu mainly focuses on the following things. First of all, as the person who proposes the project, Haoyu revises the proposal and makes it connect with the team’s ideas through discussion with the teammates. At the same time, Haoyu is responsible for organizing each group meeting. Haoyu also proposes and sketches the design for the page he was responsible for in the visualization design. As for writing the code, Haoyu first uses D3.js to construct two line charts, one to reflect the overall New York City’s COVID-19 situation and the other to select any of the five New York City districts through a selection box to explore the differences in each area. However, in the later communication with the team members, our team finds that the graphs made in Python might contain more information and be more user-friendly, so Chao and Haoyu use Python to make the line chart part of the project. Chao creates a three-page website with all the images and charts we create based on our data of COVID-19. He also uses D3.js and Python to make the rest of the data visualization embedded into our website.
