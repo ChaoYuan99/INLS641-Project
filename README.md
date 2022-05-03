@@ -1,5 +1,6 @@
 # INLS641-Project Final Report
 # Data Analytics of COVID-19 in New York City After Omicron Entering the U.S.
+**Jessica Boun, Lawrence Liu, Haoyu Xin, Chao Yuan**
 ## Goals
 1. Differences before and after Omicron hits New York City
 2. Differences of COVID-19 Data in each region of New York City
